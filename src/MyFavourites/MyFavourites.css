@@ -1,0 +1,21 @@
+.favouriteItem{
+    font-size: 2rem;
+    color: purple;
+}
+.noFavouirte{
+    font-size: 4rem;
+}
+.myFavourites{
+    margin: 2rem;
+    text-align: center;
+}
+.favoriteList{
+    font-size: 4rem;
+}
+
+.favouriteItem{
+    margin: auto;
+    padding: 1rem;
+    width: 20rem;
+    text-align: left;
+}

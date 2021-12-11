@@ -1,0 +1,21 @@
+.filterButton button{
+    width: 8rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.filterButton{
+    display: flex;
+    justify-content: center;
+    background: gray;
+    margin: 2rem;
+}
+
+.filterButton button:hover{
+    cursor: pointer;
+    background: aqua;
+}
