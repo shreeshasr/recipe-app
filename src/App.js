@@ -1,17 +1,18 @@
 import React from 'react';
+import { Route, Routes } from 'react-router';
 import './App.css';
-import Filters from './Filters/Filters';
-import MyFavourites from './MyFavourites/MyFavourites';
-import Navbar from './Navbar/Navbar';
-import Recipes from './Recipes/Recipes';
+import FullRecipe from './FullRecipe/FullRecipe';
+import Home from './Home/Home';
 
 function App() {
+
   return (
     <div className="App">
-      <Navbar/>
-      <Filters/>
-      <Recipes/>
-      <MyFavourites/>
+      
+      <Routes>  
+            <Route path="/" exact element={<Home/>} />
+            <Route path="/about/:id" element={<FullRecipe/>} />
+      </Routes>
     </div>
   );
 }

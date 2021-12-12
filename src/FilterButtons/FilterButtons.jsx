@@ -6,9 +6,9 @@ import './FilterButtons.css'
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 function FilterButtons() {
-    let favourites = useSelector(state => state.recipes.favourite);
+    useSelector(state => state.recipes.favourite);
     const dispatch = useDispatch()
-    let filters = ["All", "Side", "Vegetarian", "Pork", "Chicken", "Dessert"]
+    let filters = ["All", "Side", "Vegetarian", "Pork", "Chicken", "Dessert", "Sea food", "Pasta", "Miscellaneous"]
 
     const refillAndFilterRecipies = async (filter) => {
         await axios.get(searchApi).then( response => {

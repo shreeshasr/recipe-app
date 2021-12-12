@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import './MyFavourites.css'
 function MyFavourites() {
     let favourites = useSelector(state => state.recipes.favourite);
-    const dispatch = useDispatch()
+    useDispatch()
 
     const favouritesToDisplay = () => {
-        if(favourites.length == 0){
+        if(favourites.length === 0){
             return(
                 <>
                 <div className="noFavouirte">There are no favourites! ⭐</div>
@@ -18,7 +18,7 @@ function MyFavourites() {
             return(
                 <>
                 <div className="favoriteList">Your favourites ⭐ are </div>
-                <ol>
+                <ol className="favListing">
                 {
                     
                     favourites.map( (favourite) => {

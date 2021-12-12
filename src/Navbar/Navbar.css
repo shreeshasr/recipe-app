@@ -7,14 +7,14 @@
 .navbarHeading{
     font-size: 3rem;
 }
-.myFavourites button{
+.favouritesButton button{
     width: 10rem;
     height: 3rem;
     padding: 0.5rem 0;
     border-radius: 1rem;
     font-size: 1.1rem;
 }
-.myFavourites button:hover{
+.favouritesButton button:hover{
     cursor: pointer;
     background: darkred;
     color: white;

@@ -1,11 +1,12 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addToFavourite, filterRecipe, removeFromFavourite } from '../Redux/RecipesSlice';
+import { Link } from 'react-router-dom';
+import { addToFavourite, removeFromFavourite } from '../Redux/RecipesSlice';
 import './RecipeCard.css'
 let favouriteIds = []
 
 function RecipeCard(props) {
-    const recipies = useSelector(state => state.recipes.recipes);
+    useSelector(state => state.recipes.recipes);
     let favourites = useSelector(state => state.recipes.favourite);
     const dispatch = useDispatch()
     const setFavouriteButtonText = () => {
@@ -52,7 +53,6 @@ function RecipeCard(props) {
             }
         }
         else{
-            console.log("Returning in else")
             text  = "isNotAfavourite"
 
         }
@@ -72,13 +72,13 @@ function RecipeCard(props) {
 
     return (
         <div className="reciepeCard">
-                 <img className="strMealThumb" src={props.strMealThumb}></img>
+                 <img className="strMealThumb" src={props.strMealThumb} alt="recipeimage"></img>
             <div className="topInfosReciepe">
                 <div className="strMeal">{props.strMeal}</div>
                 <div className="strCategory">{props.strCategory}</div>
             </div>
             <div className="infoButtons">
-                <button className="seeTheFullRecipe" onClick={ () => dispatch(addToFavourite({id: props.idMeal}))}>See full recipe</button>
+                <button className="seeTheFullRecipe" onClick={ () => dispatch(addToFavourite({id: props.idMeal}))}><Link to={'/about/' + props.idMeal}>See full recipe</Link></button>
                 <button onClick={ () => addOrRemoveFavourite()} className={setFavouriteClass()}>{setFavouriteButtonText()}</button>
             </div>
             

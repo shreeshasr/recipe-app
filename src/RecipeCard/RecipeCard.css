@@ -10,7 +10,7 @@
     border-radius: 1rem;
 }
 .strMeal{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-top: 1rem;
 }
 .strMealThumb{
@@ -77,4 +77,9 @@
 } */
 .infoButtons button:hover{
     cursor: pointer;
+}
+
+.seeTheFullRecipe a{
+    text-decoration: none;
+    color: white;
 }

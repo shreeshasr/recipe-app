@@ -8,6 +8,8 @@
 .myFavourites{
     margin: 2rem;
     text-align: center;
+    background: lightgray;
+    padding: 4rem;
 }
 .favoriteList{
     font-size: 4rem;

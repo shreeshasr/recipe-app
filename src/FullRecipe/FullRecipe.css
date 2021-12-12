@@ -1,0 +1,30 @@
+.fullRecipe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.detailsRight{
+    width: 50rem;
+}
+.instructions, .youtubeLink{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.backButton{
+    margin: 10rem auto;
+    width: 100%;
+    text-align: center;
+}
+.backButton button{
+    padding: 0 2rem;
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    background: none;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.backButton button a{
+    text-decoration: none;
+}
