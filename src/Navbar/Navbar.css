@@ -13,9 +13,34 @@
     padding: 0.5rem 0;
     border-radius: 1rem;
     font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .favouritesButton button:hover{
     cursor: pointer;
     background: darkred;
     color: white;
+}
+.themeChangeButton{
+    width: 10rem;
+    height: 3rem;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    text-transform: uppercase;
+}
+.buttonDark{
+    background: black;
+    color: white;
+    border: 0.1 rem solid white
+}
+
+.buttonLight{
+    background: white;
+    color: black;
+}
+.themeChangeButton:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -5,6 +5,7 @@
     height: 29rem;
     margin: 1rem;
     background: white;
+    color: black;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 1rem;
@@ -70,11 +71,11 @@
     height: 4rem;
 }
 
-/* .reciepeCard:hover{
+.reciepeCard:hover{
     background: powderblue;
     transform: scale(1.05);
     cursor: pointer;
-} */
+}
 .infoButtons button:hover{
     cursor: pointer;
 }

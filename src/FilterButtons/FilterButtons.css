@@ -1,5 +1,5 @@
 .filterButton button{
-    width: 8rem;
+    width: 10rem;
     margin: 1rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -13,9 +13,17 @@
     justify-content: center;
     background: gray;
     margin: 2rem;
+    border-radius: 1rem;
 }
 
 .filterButton button:hover{
     cursor: pointer;
     background: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filterButton button:focus{
+    cursor: pointer;
+    background: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
