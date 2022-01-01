@@ -17,7 +17,7 @@ function Recipes() {
             dispatch(fetchAllRecipes(response.data.meals))
         })
 
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="recipesAndFavourites">

@@ -27,3 +27,20 @@
     background: aqua;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media screen and (max-width: 1024px) {
+    .filterButton{
+        flex-wrap: wrap;
+        margin: 0.5rem;
+    }
+
+    .filterButton button{
+        width: 8rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
