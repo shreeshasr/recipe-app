@@ -8,24 +8,11 @@ function Navbar(props) {
     useDispatch()
     
     const setButtonClass = () => {
-        if(props.theme === "Light Mode"){
-          buttonClass = "buttonDark"
-        }
-        else{
-          console.log("Setting dark")
-          buttonClass = "buttonLight"
-        }
-        return buttonClass
+        return props.theme === "Light Mode" ? "buttonDark" : "buttonLight"
     }
 
     const setButtonText = () => {
-        if(props.theme === "Dark Mode"){
-          buttonText = "Light Mode"
-        }
-        else{
-            buttonText = "Dark Mode"
-        }
-        return buttonText
+        return props.theme === "Dark Mode" ? "Light Mode" : "Dark Mode" 
     }
 
     return (
